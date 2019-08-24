@@ -1,0 +1,48 @@
+/*  apply a natural box layout model to all elements  */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+    margin: 0 auto;
+
+
+	h1{
+		font-size: 2rem;
+	}
+	
+	h2{
+		font-size: 1.5rem;
+    }
+    
+    header{
+        display: flex;
+        margin: 0 auto;
+        background-image: url(../images/1240xlg.jpg);
+        height: 6rem;
+        
+        h1, h2{
+            text-align: left;
+            justify-self: start;
+        }
+
+        a{
+            align-self: end;
+            justify-self: end;
+        }
+    
+    }
+
+    body{
+        margin: 0 auto;
+        background-color: #51BBE8;
+        max-width: 1024px;
+    }
+
+}
