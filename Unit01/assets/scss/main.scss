@@ -1,3 +1,7 @@
+@import 'reset';
+@import 'vars';
+@import 'grid';
+
 /*  apply a natural box layout model to all elements  */
 * { 
     -moz-box-sizing: border-box; 
@@ -13,36 +17,58 @@ html {
     margin: 0 auto;
 
 
-	h1{
-		font-size: 2rem;
-	}
-	
-	h2{
-		font-size: 1.5rem;
-    }
-    
-    header{
-        display: flex;
-        margin: 0 auto;
-        background-image: url(../images/1240xlg.jpg);
-        height: 6rem;
-        
-        h1, h2{
-            text-align: left;
-            justify-self: start;
-        }
-
-        a{
-            align-self: end;
-            justify-self: end;
-        }
-    
-    }
-
     body{
         margin: 0 auto;
         background-color: #51BBE8;
         max-width: 1024px;
-    }
+    
 
+        h1{
+            font-size: 2rem;
+        }
+        
+        h2{
+            font-size: 1.5rem;
+        }
+    
+        header{
+            display: flex;
+            flex-direction: column;
+            -ms-flex-direction: column;
+            margin: 0 auto;
+            background-image: url(../images/1240xlg.jpg);
+            height: 6rem;
+            
+            h1, h2{
+                text-align: left;
+                justify-self: start;
+            }
+
+            a{
+                align-self: end;
+                justify-self: end;
+            }
+        
+        }
+
+        div.container{
+
+            display: flex;
+            -ms-display: flex;
+            flex-direction: column;
+            -ms-flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 20rem;
+
+
+        }
+
+        footer{
+            text-align: center;
+            padding: 1rem 2rem;
+            background-color: $pBkg;
+        }
+
+    }//end body
 }
