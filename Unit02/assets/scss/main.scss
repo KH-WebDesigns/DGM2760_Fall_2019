@@ -1,0 +1,93 @@
+@import 'reset';
+@import 'vars';
+@import 'grid';
+
+/*  apply a natural box layout model to all elements  */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    font-family: 'Overpass Mono', monospace;
+
+
+
+
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+    margin: 0 auto;
+    color: $link-light;
+    background-color: $secondaryBkg;
+
+    font-size: $defaultFontSize;
+    h1{
+        font-size: $h1;
+    }
+
+    h2{
+        font-size: $h2;
+    }
+
+    h5{
+        font-size: $h5;
+    }
+
+    body{
+
+        header{
+            background-image: url(../images/closeau_header_1920.jpg);
+            height: 200px;
+            color: $link-light;
+            box-shadow: 0 1px 10px black;
+            
+            h1, h2{
+                padding-left: 1.5rem;
+                
+            }
+
+            h1{
+                padding-top: 1rem;
+            }
+        }
+
+        div.page-wrapper{
+            background-color: $secondaryBkg;
+            display: flex;
+            -ms-display: flex;
+            flex-direction: column;
+            -ms-flex-direction: column;
+            align-items: center;
+            -ms-flex-align: center;
+            justify-content: space-around;
+            padding: 2rem auto;
+            margin: 2rem auto;
+            height: 50rem;
+        }
+
+        footer{
+            text-align: center;
+            font-size: $h4;
+            background-color: $primaryBkg;
+            padding: 1.5rem;
+            color: $link-light;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -1px 10px black;
+
+            a{
+                color: inherit;
+            }
+        }
+    } //end body
+} //end html
+
+
+//link-specific styles
+a{
+    text-decoration: none;
+    
+}
