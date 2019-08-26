@@ -1,0 +1,36 @@
+//Colors: 
+$primaryBkg: #CAECFF;
+$secondaryBkg: #C8C8CC;
+$link-light: #FAFAFF;
+$link-dark: #7D7D7F;
+
+//fontsizes: 
+$defaultFontSize: 62.5%;
+
+$h1: 4.2em;
+$h2: 3.6em;
+$h3: 2.8em;
+$h4: 2.4em;
+$h5: 1.8em;
+$p: 1.6em;
+
+
+h1{
+    font-size: $h1;
+}
+h2{
+    font-size: $h2;
+}
+h3{
+    font-size: $h3;
+}
+h4{
+    font-size: $h4;
+}
+h5{
+    font-size: $h5;
+}
+ul{
+font-size: $p;
+}
+
