@@ -125,35 +125,12 @@ ul {
   font-size: 1.6em;
 }
 
-button {
-  padding: 0.75rem 2rem;
-  border-radius: 10px;
-  border-style: none;
-  box-shadow: 0px 2px 2px black;
-  font-size: 1.8em;
-  background-color: #CAECFF;
-  color: #7D7D7F;
-  transition: 0.5s;
-}
-
-button:hover {
-  background-color: #97daff;
-}
-
-input {
-  padding: 0.8rem 2rem;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #C8C8CC;
-  box-shadow: 0 0.5px 2px black;
-}
-
 /*  apply a natural box layout model to all elements  */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
@@ -161,75 +138,243 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   margin: 0 auto;
-  color: #FAFAFF;
-  background-color: #C8C8CC;
-  font-size: 62.5%;
-}
-html h1 {
-  font-size: 4.2em;
-}
-html h2 {
-  font-size: 3.6em;
-}
-html h5 {
-  font-size: 1.8em;
-}
-html body header {
-  background-image: url(../images/randnum_header_1920.jpg);
-  background-repeat: no-repeat;
-  height: 130px;
-  color: #FAFAFF;
-  box-shadow: 0 1px 10px black;
-}
-html body header h1, html body header h2 {
-  padding-left: 1.5rem;
-}
-html body header h1 {
-  padding-top: 1rem;
-}
-html body div.page-wrapper {
-  background-color: #C8C8CC;
-  display: flex;
-  -ms-display: flex;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  align-items: center;
-  -ms-flex-align: center;
-  justify-content: space-evenly;
-  padding: 2rem auto;
-  margin: 2rem auto;
-  height: 50rem;
-}
-html body form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-items: space-between;
-  -ms-flex-direction: row;
-  -ms-display: flex;
-  -ms-flex-align: center;
-}
-html body form button, html body form input, html body form label {
-  font-size: 1.8em;
-  margin-left: 1rem;
-}
-html body footer {
-  text-align: center;
-  font-size: 2.4em;
-  background-color: #C8C8CC;
-  padding: 1.5rem;
-  color: #FAFAFF;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  box-shadow: 0 -1px 10px black;
-}
-html body footer a {
-  color: inherit;
+  background-color: #3D606E;
 }
 
-a {
-  text-decoration: none;
+header {
+  height: 130px;
+  background-image: url(../images/randnum_header_1920.jpg);
+  background-repeat: no-repeat;
+  color: #FFFFFA;
+}
+
+main {
+  padding: 2%;
+}
+
+.row {
+  clear: both;
+}
+
+.small-1 {
+  width: 8.3333333333%;
+  float: left;
+}
+
+.small-2 {
+  width: 16.6666666667%;
+  float: left;
+}
+
+.small-3 {
+  width: 25%;
+  float: left;
+}
+
+.small-4 {
+  width: 33.3333333333%;
+  float: left;
+}
+
+.small-5 {
+  width: 41.6666666667%;
+  float: left;
+}
+
+.small-6 {
+  width: 50%;
+  float: left;
+}
+
+.small-7 {
+  width: 58.3333333333%;
+  float: left;
+}
+
+.small-8 {
+  width: 66.6666666667%;
+  float: left;
+}
+
+.small-9 {
+  width: 75%;
+  float: left;
+}
+
+.small-10 {
+  width: 83.3333333333%;
+  float: left;
+}
+
+.small-11 {
+  width: 91.6666666667%;
+  float: left;
+}
+
+.small-12 {
+  width: 100%;
+  float: left;
+}
+
+div.footer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+div.footer-wrapper footer {
+  color: #FFFFFA;
+  background-color: #183441;
+  height: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (min-width: 560px) {
+  .medium-1 {
+    width: 8.3333333333%;
+    float: left;
+  }
+
+  .medium-2 {
+    width: 16.6666666667%;
+    float: left;
+  }
+
+  .medium-3 {
+    width: 25%;
+    float: left;
+  }
+
+  .medium-4 {
+    width: 33.3333333333%;
+    float: left;
+  }
+
+  .medium-5 {
+    width: 41.6666666667%;
+    float: left;
+  }
+
+  .medium-6 {
+    width: 50%;
+    float: left;
+  }
+
+  .medium-7 {
+    width: 58.3333333333%;
+    float: left;
+  }
+
+  .medium-8 {
+    width: 66.6666666667%;
+    float: left;
+  }
+
+  .medium-9 {
+    width: 75%;
+    float: left;
+  }
+
+  .medium-10 {
+    width: 83.3333333333%;
+    float: left;
+  }
+
+  .medium-11 {
+    width: 91.6666666667%;
+    float: left;
+  }
+
+  .medium-12 {
+    width: 100%;
+    float: left;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  .large-1 {
+    width: 8.3333333333%;
+    float: left;
+  }
+
+  .large-2 {
+    width: 16.6666666667%;
+    float: left;
+  }
+
+  .large-3 {
+    width: 25%;
+    float: left;
+  }
+
+  .large-4 {
+    width: 33.3333333333%;
+    float: left;
+  }
+
+  .large-5 {
+    width: 41.6666666667%;
+    float: left;
+  }
+
+  .large-6 {
+    width: 50%;
+    float: left;
+  }
+
+  .large-7 {
+    width: 58.3333333333%;
+    float: left;
+  }
+
+  .large-8 {
+    width: 66.6666666667%;
+    float: left;
+  }
+
+  .large-9 {
+    width: 75%;
+    float: left;
+  }
+
+  .large-10 {
+    width: 83.3333333333%;
+    float: left;
+  }
+
+  .large-11 {
+    width: 91.6666666667%;
+    float: left;
+  }
+
+  .large-12 {
+    width: 100%;
+    float: left;
+  }
+}
+input {
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #3D606E;
+  box-shadow: 0 0.5px 2px black;
+}
+
+button {
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0px 2px 2px black;
+  font-size: 1.8em;
+  background-color: #3D606E;
+  color: #212121;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: #2b434d;
 }
 
 /*# sourceMappingURL=main.css.map */

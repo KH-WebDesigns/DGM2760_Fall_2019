@@ -1,0 +1,72 @@
+/*  apply a natural box layout model to all elements  */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+    margin: 0 auto;
+    background-color: $darkBkg;
+}
+
+header{
+
+    height: 130px;
+    background-image: url(../images/randnum_header_1920.jpg);
+    background-repeat: no-repeat;
+    color: $text-light;
+    
+
+
+}
+
+
+main{
+    padding: $edge;
+
+
+}
+
+
+
+
+//=======================COLUMN LAYOUT====================//
+
+.row {
+	clear: both;
+}
+
+
+@for $i from 1 through 12 { //i is the variable representing each row
+	$w: ($i / 12) * 100%; //width of columns
+	.small-#{$i} {
+		width: $w; float: left;
+	}
+}
+//======================= FOOTER LAYOUT ========================//
+
+div.footer-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    footer{
+        color: $text-light;
+        background-color: $nav;
+        height: 50px;
+    }
+}
+
+
+
+
+//======================== CLEARFIX ========================//
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
