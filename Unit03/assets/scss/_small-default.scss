@@ -20,16 +20,16 @@ header{
     background-image: url(../images/randnum_header_1920.jpg);
     background-repeat: no-repeat;
     color: $text-light;
-    
+    box-shadow: 0 4px 10px black;
 
 
 }
 
 
 main{
-    padding: $edge;
-
-
+    margin: 3rem auto;
+    padding: 0 $edge;
+    
 }
 
 
@@ -53,11 +53,16 @@ main{
 div.footer-wrapper{
     max-width: 1200px;
     margin: 0 auto;
+    background-color: $nav;
+    border: 2px dotted pink;
+
     
     footer{
         color: $text-light;
         background-color: $nav;
-        height: 50px;
+        height: 3rem;
+        text-align: center;
+
     }
 }
 
@@ -69,4 +74,5 @@ div.footer-wrapper{
     content: "";
     clear: both;
     display: table;
+
 }

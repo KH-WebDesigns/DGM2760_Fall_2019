@@ -146,10 +146,12 @@ header {
   background-image: url(../images/randnum_header_1920.jpg);
   background-repeat: no-repeat;
   color: #FFFFFA;
+  box-shadow: 0 4px 10px black;
 }
 
 main {
-  padding: 2%;
+  margin: 0 auto;
+  margin-top: 3rem;
 }
 
 .row {
@@ -219,11 +221,14 @@ main {
 div.footer-wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #183441;
+  border: 2px dotted pink;
 }
 div.footer-wrapper footer {
   color: #FFFFFA;
   background-color: #183441;
-  height: 50px;
+  height: 3rem;
+  text-align: center;
 }
 
 .clearfix::after {
@@ -352,6 +357,10 @@ div.footer-wrapper footer {
   .large-12 {
     width: 100%;
     float: left;
+  }
+
+  div.footer-wrapper footer {
+    border: 2px dashed red;
   }
 }
 input {
