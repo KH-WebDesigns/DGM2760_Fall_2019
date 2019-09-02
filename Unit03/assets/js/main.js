@@ -1,18 +1,22 @@
-let pageTitle = document.getElementById('pageTitle');
-let secPageTitle = document.getElementById('secPageTitle');
+let pageTitle = document.querySelector('#pageTitle').innerText = `DGM 2760 - Unit 03`;
+let secPageTitle = document.querySelector('#secPageTitle').innerText = `High/Low Guessing Game`;
+let didTheyGuess = false;
+let attempts = 0;
+let playerGuess = 0;
 
-function randNum(lowNum, highNum) {
-    return Math.floor(Math.random() * (highNum - lowNum) + lowNum);
+const answerNum = Math.floor(Math.random() * 15);
+
+
+
+//The user will pick a random number between 0 and 16
+function checkGuess() {
+   attempts++;
+//    console.log(`You have guessed ${attempts} times.`);
+    playerGuess = document.querySelector('#yourGuess').nodeValue;
+    console.log(`You guessed ${playerGuess}`);
+
+
+    const feedback = document.querySelector('#feedback');
 }
 
-pageTitle.innerHTML = "DGM 2760 - Unit 03";
-secPageTitle.innerHTML = "High/Low Guessing Game"; 
-
-
-/* Creating using this formula/concept - hence the 16 instead of 15
- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#Getting_a_random_integer_between_two_values */
-// console.log(randNum(1, 16)); 
-
-
-//=================== 3 - Part 'If' Statement for Ribbons ====================//
-
+console.log(`The correct number is ${answerNum}`);

@@ -102,11 +102,11 @@ input, select {
 }
 
 h1 {
-  font-size: 4.2em;
+  font-size: 3.8em;
 }
 
 h2 {
-  font-size: 3.6em;
+  font-size: 3.2em;
 }
 
 h3 {
@@ -122,7 +122,10 @@ h5 {
 }
 
 ul {
-  font-size: 1.6em;
+  font-size: 1.8em;
+}
+ul li {
+  font-size: 0.75em;
 }
 
 /*  apply a natural box layout model to all elements  */
@@ -141,7 +144,10 @@ html {
   background-color: #3D606E;
 }
 
-header {
+div.header-wrapper {
+  margin: 0 auto;
+}
+div.header-wrapper header {
   height: 130px;
   background-image: url(../images/randnum_header_1920.jpg);
   background-repeat: no-repeat;
@@ -150,8 +156,10 @@ header {
 }
 
 main {
-  margin: 0 auto;
-  margin-top: 3rem;
+  margin: 3rem auto;
+  padding: 0 2%;
+  height: 40rem;
+  max-height: 42rem;
 }
 
 .row {
@@ -219,16 +227,21 @@ main {
 }
 
 div.footer-wrapper {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
+  display: flex;
   background-color: #183441;
-  border: 2px dotted pink;
 }
 div.footer-wrapper footer {
   color: #FFFFFA;
-  background-color: #183441;
-  height: 3rem;
+  height: 60px;
   text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+div.footer-wrapper footer a {
+  text-decoration: none;
+  color: #FFFFFA;
 }
 
 .clearfix::after {
@@ -358,32 +371,29 @@ div.footer-wrapper footer {
     width: 100%;
     float: left;
   }
-
-  div.footer-wrapper footer {
-    border: 2px dashed red;
-  }
 }
 input {
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1rem;
   border-radius: 10px;
   border-style: solid;
   border-color: #3D606E;
   box-shadow: 0 0.5px 2px black;
+  margin-bottom: 0.75rem;
 }
 
 button {
-  padding: 0.75rem 2rem;
+  padding: 0.35rem 1rem;
   border-radius: 10px;
   border-style: none;
   box-shadow: 0px 2px 2px black;
   font-size: 1.8em;
-  background-color: #3D606E;
+  background-color: #D1DBBC;
   color: #212121;
   transition: 0.4s;
 }
 
 button:hover {
-  background-color: #2b434d;
+  background-color: #bac99b;
 }
 
 /*# sourceMappingURL=main.css.map */

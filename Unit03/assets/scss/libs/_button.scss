@@ -1,15 +1,15 @@
 button{
-    padding: .75rem 2rem;
+    padding: .35rem 1rem;
     border-radius: 10px;
     border-style: none;
     box-shadow: 0px 2px 2px black;
     font-size: $h5;
-    background-color: $darkBkg;
+    background-color: $lightBkg;
     color: $text-dark;
     transition: 0.4s;
 }
 
 button:hover{
-    background-color: darken($darkBkg, 10%);
+    background-color: darken($lightBkg, 10%);
     
 }

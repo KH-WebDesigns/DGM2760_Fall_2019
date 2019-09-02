@@ -14,8 +14,8 @@ $nav: #183441;
 //fontsizes: 
 $defaultFontSize: 62.5%;
 
-$h1: 4.2em;
-$h2: 3.6em;
+$h1: 3.8em;
+$h2: 3.2em;
 $h3: 2.8em;
 $h4: 2.4em;
 $h5: 1.8em;
@@ -38,6 +38,11 @@ h5{
     font-size: $h5;
 }
 ul{
-font-size: $p;
+font-size: $h5;
+    li{
+        font-size: .75em;
+    }
 }
+
+
 

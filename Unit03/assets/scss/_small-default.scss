@@ -14,22 +14,29 @@ html {
     background-color: $darkBkg;
 }
 
-header{
-
-    height: 130px;
-    background-image: url(../images/randnum_header_1920.jpg);
-    background-repeat: no-repeat;
-    color: $text-light;
-    box-shadow: 0 4px 10px black;
+div.header-wrapper{
+    margin: 0 auto;
 
 
+    header{
+
+        height: 130px;
+        background-image: url(../images/randnum_header_1920.jpg);
+        background-repeat: no-repeat;
+        color: $text-light;
+        box-shadow: 0 4px 10px black;
+
+    
+    
+    }
 }
 
 
 main{
     margin: 3rem auto;
     padding: 0 $edge;
-    
+    height: 40rem;
+    max-height: 42rem;
 }
 
 
@@ -51,19 +58,27 @@ main{
 //======================= FOOTER LAYOUT ========================//
 
 div.footer-wrapper{
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    background-color: $nav;
-    border: 2px dotted pink;
+    display: flex;
+    background-color:$nav;
 
     
     footer{
         color: $text-light;
-        background-color: $nav;
-        height: 3rem;
+        height: 60px;
         text-align: center;
+        padding: 1rem;
+        width: 100%;
+
+        a{
+            text-decoration: none;
+            color: $text-light;
+        }
 
     }
+
+
 }
 
 

@@ -11,55 +11,55 @@
 <body>
     <div class="header-wrapper">
         <header>
-            
             <h1 id="pageTitle"></h1>
             <h2 id="secPageTitle"></h2>
-    
         </header>
     </div>
     <main class="page-wrapper clearfix">
- 
-            <h1>Unit 03 - High/Low Guessing Game</h1>
-            <h3>Please Guess the secret number between 1 and 15!</h3>
-            <h5> You'll receive a ribbon based on how quickly the task was carried out!</h5>
-    
-        <div class="row">
-            <div class="column medium-2 large-3"></div>
-            <div class="column small-12 medium-8 large-6">
-                <ul>Items Accomplished Using Javascript
-                    <li>Generate Random Numbers</li>
-                    <li>Round aforementioned numbers using the 'Math' Javascript class.</li>
-                    <li>Develop code that responds to user input/clicks</li>
-                    <li>Use switch statements to utilize logic based upon various conditions</li>
-                    <li>Use if/else statements to create complex functions</li>
-                    <li>Create elements in the DOM</li>
-                    <li>Set CSS attributes for these elements</li>
-                    <li>Add content to the end of the children of other DOM elements</li>
-                </ul>
-            </div>    
-            <div class="column medium-2 large-3"></div>
-        </div> <!--end row-->
- 
- 
-          <!--  
+        <h1>Unit 03 - High/Low Guessing Game</h1>
+        <br>
 
-    
-            <form action="#">
-                <label for="inputGuess">Guess the secret Number</label>
-                <input type="text" name="inputGuess" id="inputGuess" placeholder="1 - 15">
-                <button type="submit">Guess</button>
-            </form> -->
-    
-    
-    
-    
-    </main><!--end main-->
+        <div class="objectives">
+            <ul>Items Accomplished Using Javascript
+                <li>Generate Random Numbers</li>
+                <li>Round aforementioned numbers using the 'Math' Javascript class.</li>
+                <li>Develop code that responds to user input/clicks</li>
+                <li>Use switch statements to utilize logic based upon various conditions</li>
+                <li>Use if/else statements to create complex functions</li>
+                <li>Create elements in the DOM</li>
+                <li>Set CSS attributes for these elements</li>
+                <li>Add content to the end of the children of other DOM elements</li>
+            </ul>
+        </div>
+        <br>
+        <h3>Please guess the secret number between 1 and 15!</h3>
+        <h5>You'll receive a ribbon base on how quickly you guess the secret number.</h5>
+        <br>
+        <div>
+                <input type="number" name="yourGuess" id="yourGuess" placeholder="number">
+                <button type="submit" onclick="checkGuess()">Guess</button>
+        </div>
+        <br>
+        <div id="feedback">
 
+        </div>
+
+
+    </main>
     <div class="footer-wrapper clearfix">
         <footer>
             &copy;2019 &bull; <a href="https://KHWebDesigns.com">KHWebDesigns</a> &bull; Kurt Heimbigner
         </footer>
     </div>
+
+
+    
+
+
+
+    <!-- <form action="#">
+
+        </form>  -->
     <script src="assets/js/main.js"></script>
 </body>
 </html>
