@@ -8,18 +8,23 @@
     <link href="https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body>
+<body onresize="onPageResize()">
     <header>
         <h1>Inspector Closeau</h1>
         <h2>The French Connection</h2>
     </header>
     <div class="page-wrapper">
         <h1>Inspector Closeau's <br>Window Size and Dom Viewer</h1>
-        <h5 id="windowSize"></h5>  
-        <h5 id="offsetStats"></h5>
-        <h5 id="currentUrl"></h5>
-        <h5 id="docTitle"></h5>
-        <h5 id="lastUpdated"></h5>
+        <section>
+            <h4>Window Properties</h4>
+            <br>
+            <p id="windowProps"></p>
+            <hr>
+            <h4>Document Properties</h4>
+            <br>
+            <p id="docProps"></p>
+        </section>
+
         
 
         <ul>Skills Demonstrated

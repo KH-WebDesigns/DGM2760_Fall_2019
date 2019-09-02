@@ -1,15 +1,11 @@
-let windowWidth = window.innerWidth;
-let windowHeighth = window.innerHeight;
-let windowSize = document.getElementById('windowSize');
-let docTitle = document.getElementById('docTitle');
-let currentUrl = document.getElementById('currentUrl');
-let lastUpdated = document.getElementById('lastUpdated');
-let xOffset = window.pageXOffset;
-let yOffset = window.pageYOffset;
-let offsetStats = document.getElementById('offsetStats');
+function onPageResize(){
+    let windowSize = `This page is ${window.innerWidth} pixels wide and ${window.innerHeight} pixels high.`
+    let offsetStats = `The window is offset by ${window.pageXOffset} pixels on the X axis and ${window.pageYOffset} pixels on the Y axis.`
+    let currentUrl = `The URL for this page is ${document.URL}.`
+    let lastUpdated = `This page was last updated via Git push on ${document.lastModified}.`
+    let docTitle = `The title of this document is ${document.title}.`
 
-windowSize.innerHTML = "This page is " + windowWidth + " pixels wide and " + windowHeighth + " pixels high."; 
-offsetStats.innerHTML = "The window is offset by " + xOffset + " pixels on the X axis and " + yOffset + " pixels on the Y axis."
-currentUrl.innerHTML = "The url for this page is " + document.URL;
-docTitle.innerHTML = "The title of this document is " + document.title;
-lastUpdated.innerHTML = "This page was last updated:  " + document.lastModified;
+    let windowProps = document.querySelector('#windowProps').innerText = `${windowSize} \n ${offsetStats} \n \n ` 
+    let docProps = document.querySelector('#docProps').innerText = `${currentUrl} \n ${lastUpdated} \n ${docTitle} \n \n`
+}
+onPageResize();
