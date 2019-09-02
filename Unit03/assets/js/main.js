@@ -18,7 +18,7 @@ function checkGuess() {
 
    if (playerGuess == answerNum) {
       console.log(`You are correct!`)
-      feedback.innerText = `You win! The answer was ${answerNum}!`
+      feedback.innerText = `You are correct! The answer was ${answerNum}!`
       yourAward();
    } else if(playerGuess > answerNum && playerGuess < 16) {
       feedback.innerText= `Your guess is too high, please try again.`
