@@ -57,7 +57,11 @@ function yourAward(){
    const yourRibbon = document.createElement('img'); //We'll use this to generate the ribbons as an image.
    const ribbon = document.querySelector('#ribbon');// Selects the element in which the ribbon will generate.
    yourRibbon.setAttribute('src', imagePath);
-   ribbon.appendChild(yourRibbon);
+   
+   if(!ribbon.hasChildNodes()){
+      ribbon.appendChild(yourRibbon);
+   }
+
 
 }
 
