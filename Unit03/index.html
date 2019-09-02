@@ -32,17 +32,18 @@
             </ul>
         </div>
         <br>
-        <h3>Please guess the secret number between 1 and 15!</h3>
+        <h3>Please guess the secret number between 0 and 16!</h3>
         <h5>You'll receive a ribbon base on how quickly you guess the secret number.</h5>
         <br>
         <div>
                 <input type="number" name="yourGuess" id="yourGuess" placeholder="number">
                 <button type="submit" onclick="checkGuess()">Guess</button>
+                <h5 id="attempts"></h5>
         </div>
         <br>
         <div id="feedback">
-
         </div>
+        <div id="ribbon"></div>
 
 
     </main>

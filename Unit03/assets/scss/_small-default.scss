@@ -37,6 +37,16 @@ main{
     padding: 0 $edge;
     height: 40rem;
     max-height: 42rem;
+
+
+    div#ribbon{
+        img{
+            max-height: 5rem;
+            max-width:5rem;
+        }
+    }
+
+
 }
 
 
