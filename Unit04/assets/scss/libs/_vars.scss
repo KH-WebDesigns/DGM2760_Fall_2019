@@ -1,0 +1,45 @@
+//Gutters
+$edge: 2%;
+$dblEdge: (2 * $edge);
+
+//Colors: 
+$bkgLight: #F6f6f6;
+$bkgDark: #675E70;
+$txtLight: #FAFAFF;
+$txtDark: #2a2a2a;
+$nav: #3d364b;
+
+//fontsizes: 
+$defaultFontSize: 62.5%;
+
+$h1: 4.2em;
+$h2: 3.6em;
+$h3: 2.8em;
+$h4: 2.4em;
+$h5: 1.8em;
+$p: 1.6em;
+
+
+h1{
+    font-size: $h1;
+}
+h2{
+    font-size: $h2;
+}
+h3{
+    font-size: $h3;
+}
+h4{
+    font-size: $h4;
+}
+h5{
+    font-size: $h5;
+}
+ul{
+font-size: $p;
+
+    li{
+       font-size: 1rem;
+    }
+}
+

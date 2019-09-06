@@ -1,0 +1,16 @@
+button{
+    padding: .75rem 2rem;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0px 2px 2px black;
+    font-size: $h5;
+    background-color: $nav;
+    color: $txtLight;
+    transition: 0.4s;
+    
+}
+
+button:hover{
+    background-color: lighten($nav, 15%);
+    
+}
