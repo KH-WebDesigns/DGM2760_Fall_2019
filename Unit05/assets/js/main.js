@@ -1,2 +1,2 @@
-document.querySelector('#headerName').innerText = `The Arborist`
-document.querySelector('#headerSlogan').innerText = `Manipulating Arrays With Events`
+document.querySelector('#headerName').textContent = `The Arborist`
+document.querySelector('#headerSlogan').textContent = `Manipulating Arrays With Events`

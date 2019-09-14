@@ -3,10 +3,11 @@ $edge: 2%;
 $dblEdge: (2 * $edge);
 
 //Colors: 
-$primaryBkg: #CAECFF;
-$secondaryBkg: #C8C8CC;
-$link-light: #FAFAFF;
-$link-dark: #7D7D7F;
+$bkgLight: #F6f6f6;
+$bkgDark: #57735A;
+$txtLight: #FAFAFF;
+$txtDark: #2a2a2a;
+$nav: #3d364b;
 
 //fontsizes: 
 $defaultFontSize: 62.5%; //this converts the default size to 10px for simpler increments

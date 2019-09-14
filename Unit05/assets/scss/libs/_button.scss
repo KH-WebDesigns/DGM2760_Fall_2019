@@ -3,13 +3,13 @@ button{
     border-radius: 10px;
     border-style: none;
     box-shadow: 0px 2px 2px black;
-    font-size: $h5;
-    background-color: $primaryBkg;
-    color: $link-dark;
+    font-size: $body2;
+    background-color: $nav;
+    color: $txtLight;
     transition: 0.4s;
 }
 
 button:hover{
-    background-color: darken($primaryBkg, 10%);
+    background-color: lighten($nav, 15%);
     
 }

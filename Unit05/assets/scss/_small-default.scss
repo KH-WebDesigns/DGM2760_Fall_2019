@@ -15,21 +15,143 @@ html {
 
 }
 
-//=======================COLUMN LAYOUT====================//
 
-.row {
-	clear: both;
+body{
+
+    display: grid;
+    -ms-grid-rows: .5fr 5fr 1fr;
+    grid-template-rows: .5fr 5fr 1fr;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
+    header{
+
+        margin: 0 auto;
+        background-image: url(../images/headerBkg.png);
+        background-repeat: no-repeat;
+        margin-bottom: 2rem;
+        max-width: 1920px;
+        height: 250px;
+        color: $txtLight; 
+        box-shadow: 0 .1rem 10px black;      
+
+    }
+
+    background-color: $bkgDark;
+
+    div.main-wrapper{
+        background-color: $bkgDark;
+
+        
+        main{
+            background-color: $bkgLight;
+            max-width: 120rem;
+            margin: 0 $dblEdge;
+            padding: 1.75rem 2.5rem;
+            border-radius: 15px;
+            box-shadow: 1px .5rem 10px $txtDark;
+
+
+
+            display: grid;
+            grid-template-columns: 3fr 1fr 2fr;
+            -ms-grid-columns: 3fr 3fr 2fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            -ms-grid-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "list blank result"
+            "list blank result"
+            "list blank error"
+            "list blank error";
+
+
+
+            div#treeAdd{
+                grid-area: list;
+                grid-row: 1;
+                -ms-grid-row: 1;
+                
+                
+            }
+            div#treeDelete{
+                grid-area: list;
+                grid-row: 2;
+                -ms-grid-row: 2;
+            }
+
+            div#treeManip{
+                grid-area: list;
+                grid-row: 3;
+                -ms-grid-row: 3;
+            }
+
+            div#treeGet{
+                grid-area: list;
+                grid-row: 4;
+                -ms-grid-row: 4;
+            }
+
+            div#results{
+                grid-area: result;
+                grid-row: 1 / span 2;
+                -ms-grid-row-span: 2;
+                -ms-grid-row: 1;
+                background-color: $bkgDark;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px $txtDark;
+                padding: $edge;
+                color: $txtLight;
+
+            }
+            
+            div#errReport{
+                grid-area: error;
+                grid-row: 3 / span 2;
+                -ms-grid-row-span: 2;
+                -ms-grid-row: 2;
+                background-color: $bkgDark;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px $txtDark;
+                padding: $edge;
+                color: $txtLight;
+            }
+
+            div#treeAdd, div#treeDelete, div#treeManip, div#treeGet, div#errReport, div#results{
+                    display: flex;
+                    flex-direction: column;
+                    margin: .5rem 0;
+
+                    button{
+                        max-width: 25rem;
+                        margin: .5rem 0;
+                    }
+
+                }
+            
+        }
+    }//end main wrapper
+
+    div.footer-wrapper{
+        footer{
+            text-align: center;
+        }
+    }
+ 
+
+    
 }
 
 
-@for $i from 1 through 12 { //i is the variable representing each row
-	$w: ($i / 12) * 100%; //width of columns
-	.small-#{$i} {
-		width: $w; float: left;
-	}
-}
+
+
+
+
 //======================= FOOTER LAYOUT ========================//
-
 
 
 

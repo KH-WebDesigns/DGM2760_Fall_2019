@@ -103,7 +103,6 @@ input, select {
 
 h1 {
   font-size: 9.6rem;
-  letter-spacing: 0.075rem;
 }
 
 h2 {
@@ -122,8 +121,22 @@ h5 {
   font-size: 2.4rem;
 }
 
-p.body1 {
-  letter-spacing: 0.0125rem;
+h6 {
+  font-size: 2rem;
+}
+
+sub .sub1 {
+  font-size: 1.6rem;
+}
+sub .sub2 {
+  font-size: 1.4rem;
+}
+
+p .body1 {
+  font-size: 1.6rem;
+}
+p .body2 {
+  font-size: 1.4rem;
 }
 
 /*  apply a natural box layout model to all elements  */
@@ -141,68 +154,95 @@ html {
   margin: 0 auto;
 }
 
-.row {
-  clear: both;
+body {
+  display: grid;
+  -ms-grid-rows: 0.5fr 5fr 1fr;
+  grid-template-rows: 0.5fr 5fr 1fr;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer";
+  background-color: #57735A;
 }
-
-.small-1 {
-  width: 8.3333333333%;
-  float: left;
+body header {
+  margin: 0 auto;
+  background-image: url(../images/headerBkg.png);
+  background-repeat: no-repeat;
+  margin-bottom: 2rem;
+  max-width: 1920px;
+  height: 250px;
+  color: #FAFAFF;
+  box-shadow: 0 0.1rem 10px black;
 }
-
-.small-2 {
-  width: 16.6666666667%;
-  float: left;
+body div.main-wrapper {
+  background-color: #57735A;
 }
-
-.small-3 {
-  width: 25%;
-  float: left;
+body div.main-wrapper main {
+  background-color: #F6f6f6;
+  max-width: 120rem;
+  margin: 0 4%;
+  padding: 1.75rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 1px 0.5rem 10px #2a2a2a;
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr;
+  -ms-grid-columns: 3fr 3fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "list blank result" "list blank result" "list blank error" "list blank error";
 }
-
-.small-4 {
-  width: 33.3333333333%;
-  float: left;
+body div.main-wrapper main div#treeAdd {
+  grid-area: list;
+  grid-row: 1;
+  -ms-grid-row: 1;
 }
-
-.small-5 {
-  width: 41.6666666667%;
-  float: left;
+body div.main-wrapper main div#treeDelete {
+  grid-area: list;
+  grid-row: 2;
+  -ms-grid-row: 2;
 }
-
-.small-6 {
-  width: 50%;
-  float: left;
+body div.main-wrapper main div#treeManip {
+  grid-area: list;
+  grid-row: 3;
+  -ms-grid-row: 3;
 }
-
-.small-7 {
-  width: 58.3333333333%;
-  float: left;
+body div.main-wrapper main div#treeGet {
+  grid-area: list;
+  grid-row: 4;
+  -ms-grid-row: 4;
 }
-
-.small-8 {
-  width: 66.6666666667%;
-  float: left;
+body div.main-wrapper main div#results {
+  grid-area: result;
+  grid-row: 1/span 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-row: 1;
+  background-color: #57735A;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px #2a2a2a;
+  padding: 2%;
+  color: #FAFAFF;
 }
-
-.small-9 {
-  width: 75%;
-  float: left;
+body div.main-wrapper main div#errReport {
+  grid-area: error;
+  grid-row: 3/span 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-row: 2;
+  background-color: #57735A;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px #2a2a2a;
+  padding: 2%;
+  color: #FAFAFF;
 }
-
-.small-10 {
-  width: 83.3333333333%;
-  float: left;
+body div.main-wrapper main div#treeAdd, body div.main-wrapper main div#treeDelete, body div.main-wrapper main div#treeManip, body div.main-wrapper main div#treeGet, body div.main-wrapper main div#errReport, body div.main-wrapper main div#results {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
 }
-
-.small-11 {
-  width: 91.6666666667%;
-  float: left;
+body div.main-wrapper main div#treeAdd button, body div.main-wrapper main div#treeDelete button, body div.main-wrapper main div#treeManip button, body div.main-wrapper main div#treeGet button, body div.main-wrapper main div#errReport button, body div.main-wrapper main div#results button {
+  max-width: 25rem;
+  margin: 0.5rem 0;
 }
-
-.small-12 {
-  width: 100%;
-  float: left;
+body div.footer-wrapper footer {
+  text-align: center;
 }
 
 .clearfix::after {
@@ -211,133 +251,11 @@ html {
   display: table;
 }
 
-@media only screen and (min-width: 560px) {
-  .medium-1 {
-    width: 8.3333333333%;
-    float: left;
-  }
-
-  .medium-2 {
-    width: 16.6666666667%;
-    float: left;
-  }
-
-  .medium-3 {
-    width: 25%;
-    float: left;
-  }
-
-  .medium-4 {
-    width: 33.3333333333%;
-    float: left;
-  }
-
-  .medium-5 {
-    width: 41.6666666667%;
-    float: left;
-  }
-
-  .medium-6 {
-    width: 50%;
-    float: left;
-  }
-
-  .medium-7 {
-    width: 58.3333333333%;
-    float: left;
-  }
-
-  .medium-8 {
-    width: 66.6666666667%;
-    float: left;
-  }
-
-  .medium-9 {
-    width: 75%;
-    float: left;
-  }
-
-  .medium-10 {
-    width: 83.3333333333%;
-    float: left;
-  }
-
-  .medium-11 {
-    width: 91.6666666667%;
-    float: left;
-  }
-
-  .medium-12 {
-    width: 100%;
-    float: left;
-  }
-}
-@media only screen and (min-width: 1140px) {
-  .large-1 {
-    width: 8.3333333333%;
-    float: left;
-  }
-
-  .large-2 {
-    width: 16.6666666667%;
-    float: left;
-  }
-
-  .large-3 {
-    width: 25%;
-    float: left;
-  }
-
-  .large-4 {
-    width: 33.3333333333%;
-    float: left;
-  }
-
-  .large-5 {
-    width: 41.6666666667%;
-    float: left;
-  }
-
-  .large-6 {
-    width: 50%;
-    float: left;
-  }
-
-  .large-7 {
-    width: 58.3333333333%;
-    float: left;
-  }
-
-  .large-8 {
-    width: 66.6666666667%;
-    float: left;
-  }
-
-  .large-9 {
-    width: 75%;
-    float: left;
-  }
-
-  .large-10 {
-    width: 83.3333333333%;
-    float: left;
-  }
-
-  .large-11 {
-    width: 91.6666666667%;
-    float: left;
-  }
-
-  .large-12 {
-    width: 100%;
-    float: left;
-  }
-}
 input {
   padding: 0.8rem 2rem;
   border-radius: 10px;
   border-style: solid;
-  border-color: #C8C8CC;
+  border-color: #57735A;
   box-shadow: 0 0.5px 2px black;
 }
 
@@ -346,14 +264,14 @@ button {
   border-radius: 10px;
   border-style: none;
   box-shadow: 0px 2px 2px black;
-  font-size: 2.4rem;
-  background-color: #CAECFF;
-  color: #7D7D7F;
+  font-size: 1.4rem;
+  background-color: #3d364b;
+  color: #FAFAFF;
   transition: 0.4s;
 }
 
 button:hover {
-  background-color: #97daff;
+  background-color: #615677;
 }
 
 /*# sourceMappingURL=main.css.map */
