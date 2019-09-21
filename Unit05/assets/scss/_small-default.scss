@@ -12,7 +12,6 @@ html {
     -ms-text-size-adjust: 100%;
     margin: 0 auto;
 
-
 }
 
 
@@ -61,13 +60,14 @@ body{
             display: grid;
             grid-template-columns: 3fr 1fr 2fr;
             -ms-grid-columns: 3fr 3fr 2fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            -ms-grid-rows: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
             grid-template-areas: 
             "list blank result"
             "list blank result"
             "list blank error"
-            "list blank error";
+            "list blank error"
+            "ul ul ul";
 
 
 
@@ -106,6 +106,7 @@ body{
                 box-shadow: 0 4px 10px $txtDark;
                 padding: $edge;
                 color: $txtLight;
+                font-size: $h6;
 
             }
             
@@ -131,6 +132,32 @@ body{
                         margin: .5rem 0;
                     }
 
+                }
+
+                div#iLearned{
+                    grid-area: ul;
+                    grid-row: 5;
+                    -ms-grid-row: 5;
+                    grid-column: 1 / span 3;
+                    -ms-grid-column: 1;
+                    -ms-grid-column-span: 3;
+                    border-radius: 15px;
+                    box-shadow: 0 4px 10px $txtDark;
+                    padding: $edge;
+                    color: $txtLight;
+                    margin-top: .5rem;
+
+                    background-color: $bkgDark;
+
+                    ul{
+                        margin: 1rem 2rem;
+                        font-size: 150%;
+
+                        li{
+                            font-size: 75%;
+                        }
+
+                    }
                 }
             
         }

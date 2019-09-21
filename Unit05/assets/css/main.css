@@ -186,9 +186,9 @@ body div.main-wrapper main {
   display: grid;
   grid-template-columns: 3fr 1fr 2fr;
   -ms-grid-columns: 3fr 3fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "list blank result" "list blank result" "list blank error" "list blank error";
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "list blank result" "list blank result" "list blank error" "list blank error" "ul ul ul";
 }
 body div.main-wrapper main div#treeAdd {
   grid-area: list;
@@ -241,6 +241,27 @@ body div.main-wrapper main div#treeAdd button, body div.main-wrapper main div#tr
   max-width: 25rem;
   margin: 0.5rem 0;
 }
+body div.main-wrapper main div#iLearned {
+  grid-area: ul;
+  grid-row: 5;
+  -ms-grid-row: 5;
+  grid-column: 1/span 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px #2a2a2a;
+  padding: 2%;
+  color: #FAFAFF;
+  margin-top: 0.5rem;
+  background-color: #57735A;
+}
+body div.main-wrapper main div#iLearned ul {
+  margin: 2rem;
+  font-size: 150%;
+}
+body div.main-wrapper main div#iLearned ul li {
+  font-size: 75%;
+}
 body div.footer-wrapper footer {
   text-align: center;
 }
@@ -251,6 +272,11 @@ body div.footer-wrapper footer {
   display: table;
 }
 
+@media only screen and (min-width: 1140px) {
+  div.main-wrapper {
+    margin: 0 auto;
+  }
+}
 input {
   padding: 0.8rem 2rem;
   border-radius: 10px;
