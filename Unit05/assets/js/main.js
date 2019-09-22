@@ -62,7 +62,7 @@ document.querySelector('#alphaSort').onclick = () => {
 
 document.querySelector('#lowercase').onclick = () => {
     
-    const LISTTREES = () => {
+/*     const LISTTREES = () => {
         let lowerList = '';
         TREES.forEach(tree => {
 
@@ -71,7 +71,11 @@ document.querySelector('#lowercase').onclick = () => {
 
         })
         RESULTS.innerHTML = `${treeList} <span>There are ${TREES.length} Trees On This List</span>`;
+    } */
+    toLowerCase = () => {
+
+ 
     }
-    
-    LISTTREES();
+
+
 }
