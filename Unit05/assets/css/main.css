@@ -220,6 +220,7 @@ body div.main-wrapper main div#results {
   box-shadow: 0 4px 10px #2a2a2a;
   padding: 2%;
   color: #FAFAFF;
+  font-size: 2rem;
 }
 body div.main-wrapper main div#errReport {
   grid-area: error;
@@ -256,7 +257,7 @@ body div.main-wrapper main div#iLearned {
   background-color: #57735A;
 }
 body div.main-wrapper main div#iLearned ul {
-  margin: 2rem;
+  margin: 1rem 2rem;
   font-size: 150%;
 }
 body div.main-wrapper main div#iLearned ul li {

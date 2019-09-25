@@ -50,7 +50,7 @@ document.querySelector('#deleteSecond').onclick = () => {
 
 //Get rid of the last tree
 document.querySelector('#deleteLast').onclick = () => {
-    TREES.pop();
+    TREES.pop();a
     LISTTREES();
 }
 
@@ -72,10 +72,14 @@ document.querySelector('#lowercase').onclick = () => {
         })
         RESULTS.innerHTML = `${treeList} <span>There are ${TREES.length} Trees On This List</span>`;
     } */
-    toLowerCase = () => {
 
- 
-    }
+  
+        
+        TREES.foreach(tree => {
+            return tree.toLowerCase();
+        })
+
+    LISTTREES();
 
 
 }
