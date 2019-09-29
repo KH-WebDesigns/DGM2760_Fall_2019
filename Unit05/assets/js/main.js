@@ -62,24 +62,15 @@ document.querySelector('#alphaSort').onclick = () => {
 
 document.querySelector('#lowercase').onclick = () => {
     
-/*     const LISTTREES = () => {
-        let lowerList = '';
-        TREES.forEach(tree => {
 
-            // console.log(tree);
-            lowerList += `${tree} <br>`
-
-        })
-        RESULTS.innerHTML = `${treeList} <span>There are ${TREES.length} Trees On This List</span>`;
-    } */
-
-  
+    TREES.forEach( (tree) => {
+       lowerTrees = tree.toLowerCase();
+       return lowerTrees; 
+       // console.log(lowerTrees);
         
-        TREES.foreach(tree => {
-            return tree.toLowerCase();
-        })
-
-    LISTTREES();
+    });
+    LISTTREES(lowerTrees);
 
 
 }
+
