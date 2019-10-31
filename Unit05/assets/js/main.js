@@ -60,20 +60,34 @@ document.querySelector('#alphaSort').onclick = () => {
     LISTTREES();
 }
 
+
+
+
 document.querySelector('#lowercase').onclick = () => {
+   TREES.forEach((tree) => {
+       lowerTrees = tree.toLowerCase();
+   });
+
+   console.log(lowerTrees());
+
+}
+
+
+
+// document.querySelector('#lowercase').onclick = () => {
     
-let listLowerTrees = () => {
-        TREES.forEach( (tree) => {
-        lowerTrees = tree.toLowerCase();
+// let listLowerTrees = () => {
+//         TREES.forEach( (tree) => {
+//         lowerTrees = tree.toLowerCase();
         
 
             
-        });   
-    }
+//         });   
+//     }
 
 
-listLowerTrees();a
-}
+// listLowerTrees();
+// }
 
 // const LISTTREES = () => {
 //     let treeList = '';
