@@ -61,19 +61,21 @@ document.querySelector('#alphaSort').onclick = () => {
 }
 
 document.querySelector('#lowercase').onclick = () => {
-    
-let listLowerTrees = () => {
-        TREES.forEach( (tree) => {
-        lowerTrees = tree.toLowerCase();
         
+    let treeList = '';
 
-            
-        });   
-    }
+    TREES.forEach(tree => {
 
+      
+        treeList += `${tree.toLowerCase()} <br>`
+       
+    })
+    LISTTREES();
 
-listLowerTrees();a
+console.log(lowerCaseTrees);
 }
+
+
 
 // const LISTTREES = () => {
 //     let treeList = '';
@@ -85,3 +87,4 @@ listLowerTrees();a
 //     })
 //     RESULTS.innerHTML = `${treeList} <span>There are ${TREES.length} Trees On This List</span>`;
 // }
+
