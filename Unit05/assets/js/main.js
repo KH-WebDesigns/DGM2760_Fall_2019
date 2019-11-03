@@ -50,7 +50,7 @@ document.querySelector('#deleteSecond').onclick = () => {
 
 //Get rid of the last tree
 document.querySelector('#deleteLast').onclick = () => {
-    TREES.pop();a
+    TREES.pop();
     LISTTREES();
 }
 
@@ -61,33 +61,24 @@ document.querySelector('#alphaSort').onclick = () => {
 }
 
 
+const newLISTTREES = () => {
+    let treeList = '';
+    newTREES.forEach(tree => {
 
+        // console.log(tree);
+        treeList += `${tree} <br>`
 
-document.querySelector('#lowercase').onclick = () => {
-        
-    
-
-    TREES.forEach(tree => {
-
-        treeList = tree.toLowerCase();
-        return tree;
     })
-    LISTTREES();
+    RESULTS.innerHTML = `${treeList} <span>There are ${newTREES.length} Trees On This List</span>`;
+}
 
-   
-
+//Lower Case of Array Items
+document.querySelector('#lowercase').onclick = () => {
+    newTREES = TREES.map(tree => tree.toLowerCase());
+    newLISTTREES();
 }
 
 
 
-// const LISTTREES = () => {
-//     let treeList = '';
-//     TREES.forEach(tree => {
 
-//         // console.log(tree);
-//         treeList += `${tree} <br>`
-
-//     })
-//     RESULTS.innerHTML = `${treeList} <span>There are ${TREES.length} Trees On This List</span>`;
-// }
 
