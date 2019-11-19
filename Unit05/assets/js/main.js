@@ -79,6 +79,16 @@ document.querySelector('#lowercase').onclick = () => {
 }
 
 
+//Show the Third Tree
+document.querySelector('#showThird').onclick = () => {
+    filterThird = () => {
+        return TREES[2];
+    }
+    newTREES = TREES.filter(filterThird);
+    console.log(newTREES);
+newLISTTREES();
+}
+
 
 
 
