@@ -22,6 +22,9 @@ const TREES = ['oak', 'Spruce', 'Mahogany', 'Redwood'];
     
     LISTTREES();
 
+
+
+
 //============== end Initial tree list ======================//
 
 //Add to the front of the array
@@ -81,14 +84,20 @@ document.querySelector('#lowercase').onclick = () => {
 
 //Show the Third Tree
 document.querySelector('#showThird').onclick = () => {
-    filterThird = () => {
-        return TREES[2];
-    }
-    newTREES = TREES.filter(filterThird);
-    console.log(newTREES);
-newLISTTREES();
+
+    newTREES = TREES.slice(2, 3);
+    newLISTTREES();
 }
 
+//Show the Fourth Tree
+document.querySelector('#showFourth').onclick = () => {
 
-
-
+    if(TREES.length < 4) {
+        
+        document.querySelector('#errList').innerHTML = `<br> <strong> Apologies, the array needs more than 4 items to show only the fourth. </strong>`;
+    }
+    else {
+        newTREES = TREES.slice(3);
+        newLISTTREES();
+    }
+}
