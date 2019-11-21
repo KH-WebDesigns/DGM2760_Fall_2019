@@ -85,8 +85,18 @@ document.querySelector('#lowercase').onclick = () => {
 //Show the Third Tree
 document.querySelector('#showThird').onclick = () => {
 
-    newTREES = TREES.slice(2, 3);
-    newLISTTREES();
+
+    if(TREES.length < 3) {
+        document.querySelector('#errList').innerHTML = `<br> <strong> We're sorry, the array  needs to bave at least three items to show only the third item.</strong>`;
+        } 
+        else 
+        {
+        
+        newTREES = TREES.slice(2, 3);
+        newLISTTREES();
+    }   
+
+   
 }
 
 //Show the Fourth Tree
@@ -97,6 +107,7 @@ document.querySelector('#showFourth').onclick = () => {
         document.querySelector('#errList').innerHTML = `<br> <strong> Apologies, the array needs more than 4 items to show only the fourth. </strong>`;
     }
     else {
+ 
         newTREES = TREES.slice(3);
         newLISTTREES();
     }
