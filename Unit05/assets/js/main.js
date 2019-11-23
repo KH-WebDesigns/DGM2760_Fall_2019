@@ -41,7 +41,7 @@ document.querySelector('#addSpruce').onclick = () => {
 
 //Get rid of the first tree
 document.querySelector('#deleteFirst').onclick = () => {
-    if (TREES.length > 1) {
+    if (TREES.length > 0) {
         TREES.shift();
         LISTTREES();
     } else {
@@ -51,7 +51,7 @@ document.querySelector('#deleteFirst').onclick = () => {
 
 //Get rid of the second tree
 document.querySelector('#deleteSecond').onclick = () => {
- if(TREES.length >= 1){
+ if(TREES.length > 1){
     TREES.splice(1, 1);
     LISTTREES();
 } else {
@@ -61,7 +61,7 @@ document.querySelector('#deleteSecond').onclick = () => {
 
 //Get rid of the last tree
 document.querySelector('#deleteLast').onclick = () => {
-    if(TREES.length =)
+    if(TREES.length > 0){
     TREES.pop();
     LISTTREES();
 } else {
