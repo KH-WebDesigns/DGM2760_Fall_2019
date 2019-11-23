@@ -41,20 +41,32 @@ document.querySelector('#addSpruce').onclick = () => {
 
 //Get rid of the first tree
 document.querySelector('#deleteFirst').onclick = () => {
-    TREES.shift();
-    LISTTREES();
+    if (TREES.length > 1) {
+        TREES.shift();
+        LISTTREES();
+    } else {
+        document.querySelector('#errList').innerHTML = `<br> <strong> Sorry, there are no more trees left to remove! <br> Please add another tree before attempting to remove anohther. </strong>`
+    }
 }
 
 //Get rid of the second tree
 document.querySelector('#deleteSecond').onclick = () => {
+ if(TREES.length >= 1){
     TREES.splice(1, 1);
     LISTTREES();
+} else {
+    document.querySelector('#errList').innerHTML = `<br> <strong> Sorry, there are no more trees left to remove! <br> Please add another tree before attempting to remove anohther. </strong>`
+}
 }
 
 //Get rid of the last tree
 document.querySelector('#deleteLast').onclick = () => {
+    if(TREES.length =)
     TREES.pop();
     LISTTREES();
+} else {
+    document.querySelector('#errList').innerHTML = `<br> <strong> Sorry, there are no more trees left to remove! <br> Please add another tree before attempting to remove anohther. </strong>`
+}
 }
 
 //Sort Alphabetically
