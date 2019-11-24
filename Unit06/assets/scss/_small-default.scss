@@ -1,0 +1,43 @@
+/*  apply a natural box layout model to all elements  */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+    margin: 0 auto;
+
+
+}
+
+//=======================COLUMN LAYOUT====================//
+
+.row {
+	clear: both;
+}
+
+
+@for $i from 1 through 12 { //i is the variable representing each row
+	$w: ($i / 12) * 100%; //width of columns
+	.small-#{$i} {
+		width: $w; float: left;
+	}
+}
+//======================= FOOTER LAYOUT ========================//
+
+
+
+
+
+
+//======================== CLEARFIX ========================//
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

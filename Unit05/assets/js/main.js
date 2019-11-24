@@ -99,7 +99,7 @@ document.querySelector('#showThird').onclick = () => {
 
 
     if(TREES.length < 3) {
-        document.querySelector('#errList').innerHTML = `<br> <strong> We're sorry, the array  needs to bave at least three items to show only the third item.</strong>`;
+        document.querySelector('#errList').innerHTML = `<br> <strong> We're sorry, the array  needs to have at least three items to show only the third item.</strong>`;
         } 
         else 
         {
