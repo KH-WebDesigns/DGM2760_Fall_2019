@@ -9,9 +9,9 @@
 </head>
 <body>
     <div class="header-wrapper">
-        <div class="header">
-            <h2>Nonsense Story Generator</h2>
-        </div>
+        <header>
+            <h3>Nonsense Story Generator</h3>
+        </header>
     </div>
     <div class="main-wrapper">
         <main class="main">
@@ -21,19 +21,31 @@
                 <li>Javascript Regular Expressions</li>
             </ol>
             <div class="form-wrapper">
-                <div class="noun">
-                    <input type="text" name="txtNoun" id="txtNoun">
-                </div>
-                <div class="adj">
-                    <input type="text" name="txtAdj" id="txtAdj">
-                </div>
-                <div class="verbs">
-                    <input type="text" name="txtVerbs" id="txtVerbs">
-                </div>
+                <form action="#">
+                    <div class="noun">
+                            <label for="txtNoun">Nouns</label>
+                            <input type="text" name="txtNoun" id="txtNoun" />
+                        </div>
+                        <div class="adj">
+                            <label for="txtAdj">Adjectives</label>
+                            <input type="text" name="txtAdj" id="txtAdj" />
+                        </div>
+                        <div class="verbs">
+                            <label for="txtVerb">Verbs</label>
+                            <input type="text" name="txtVerbs" id="txtVerbs" />
+                        </div>
+
+                </form>
                 <button>Tell the Story</button>
             </div>
         </main>
     </div>
+    <div class="footer-wrapper">
+        <footer>
+            <h6>&copy;2019 &bull; KHWebDesigns &bull; DGM 2760</h6>
+        </footer>
+    </div>
+
     <script src="assets/js/main.js"></script>
 </body>
 </html>

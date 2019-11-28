@@ -11,7 +11,66 @@ html {
     -webkit-text-size-adjust: 100%; 
     -ms-text-size-adjust: 100%;
     margin: 0 auto;
-    
+    background-color: slategray;
+
+
+    div.header-wrapper{
+        background-color:red;
+
+        header{
+            padding: 1rem .5rem;
+            max-width: 64rem;
+            margin: 0 auto;
+
+        }
+
+
+    }
+
+    div.main-wrapper{
+        main{
+
+            display: flex;
+            flex-direction: column;
+            -ms-flex-direction: row;
+
+            background-color: pink;
+            max-height: 100vh;
+            min-height: 48rem;
+        }
+    }
+
+    div.form-wrapper{
+
+        border: 1px white dotted;
+        margin: 0 1rem;
+
+        form{
+            display: flex;
+            justify-content: space-around;
+            
+            label{
+                display: block;
+                font-size: $sub1;
+                margin: .75rem 0;
+
+            }
+            
+            input{
+                height: 8rem;
+                width: auto;
+                margin: .25rem  auto 2rem auto;
+            }
+        }
+
+        button{
+            margin: 2rem 2rem 2rem 6rem;
+            color: $txt-light;
+        }
+    }
+
+
+
 
 }
 
