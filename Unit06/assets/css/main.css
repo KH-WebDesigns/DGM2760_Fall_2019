@@ -162,6 +162,9 @@ html div.header-wrapper header {
   max-width: 64rem;
   margin: 0 auto;
 }
+html div.main-wrapper {
+  margin: 0 auto;
+}
 html div.main-wrapper main {
   display: flex;
   flex-direction: column;
@@ -169,6 +172,11 @@ html div.main-wrapper main {
   background-color: pink;
   max-height: 100vh;
   min-height: 48rem;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+html div.main-wrapper main ol {
+  margin: 1.5rem auto 0.5rem auto;
 }
 html div.form-wrapper {
   border: 1px white dotted;
@@ -189,7 +197,7 @@ html div.form-wrapper form input {
   margin: 0.25rem auto 2rem auto;
 }
 html div.form-wrapper button {
-  margin: 2rem 2rem 2rem 6rem;
+  margin: 2rem 2rem 2rem 3rem;
   color: #FFFFFA;
 }
 

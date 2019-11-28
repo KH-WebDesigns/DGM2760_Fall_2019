@@ -28,15 +28,25 @@ html {
     }
 
     div.main-wrapper{
-        main{
+        margin: 0 auto;
 
+        main{
             display: flex;
             flex-direction: column;
             -ms-flex-direction: row;
 
             background-color: pink;
             max-height: 100vh;
-            min-height: 48rem;
+            min-height: 48rem;            
+            max-width: 64rem;
+            margin: 0 auto;
+
+
+            ol{
+                margin: 1.5rem auto .5rem auto;
+            }
+
+
         }
     }
 
@@ -64,7 +74,7 @@ html {
         }
 
         button{
-            margin: 2rem 2rem 2rem 6rem;
+            margin: 2rem 2rem 2rem 3rem;
             color: $txt-light;
         }
     }
