@@ -170,7 +170,8 @@ html div.main-wrapper main {
   display: flex;
   flex-direction: column;
   -ms-flex-direction: row;
-  background-color: pink;
+  background-color: #6A303B;
+  color: #FFFFFA;
   min-height: 50rem;
   max-width: 64rem;
   margin: 0 auto;
@@ -200,6 +201,11 @@ html div.form-wrapper button {
   margin: 2rem 2rem 2rem 3rem;
   color: #FFFFFA;
 }
+html div#theStory {
+  max-width: 98%;
+  padding: 2%;
+  margin: 0 auto;
+}
 html div.footer-wrapper {
   background-color: #0D0D0D;
   color: #FFFFFA;
@@ -209,9 +215,13 @@ html div.footer-wrapper footer {
   margin: 0 auto;
   max-width: 64rem;
   text-align: center;
+  padding: 0.75rem 2rem;
 }
 html div.footer-wrapper footer h6 {
   margin: 0.5rem;
+}
+html strong {
+  color: goldenrod;
 }
 
 .row {

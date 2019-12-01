@@ -36,7 +36,8 @@ html {
             flex-direction: column;
             -ms-flex-direction: row;
 
-            background-color: pink;
+            background-color: #6A303B;
+            color: $txt-light;
             // max-height: 100vh;
             min-height: 50rem;            
             max-width: 64rem;
@@ -83,6 +84,12 @@ html {
 
     }
 
+    div#theStory{
+        max-width: 98%;
+        padding: 2%;
+        margin: 0 auto;
+    }
+
 
     div.footer-wrapper{
         background-color: $nav-dark;
@@ -94,12 +101,16 @@ html {
             margin: 0 auto;
             max-width: 64rem;
             text-align: center;
-            
+            padding: .75rem 2rem;
 
             h6{
                 margin: .5rem;
             }
         }
+    }
+
+    strong{
+        color: goldenrod;
     }
 
 }
