@@ -15,7 +15,8 @@ html {
 
 
     div.header-wrapper{
-        background-color:red;
+        background-color:$nav-dark;
+        color: $txt-light;
 
         header{
             padding: 1rem .5rem;
@@ -36,8 +37,8 @@ html {
             -ms-flex-direction: row;
 
             background-color: pink;
-            max-height: 100vh;
-            min-height: 48rem;            
+            // max-height: 100vh;
+            min-height: 50rem;            
             max-width: 64rem;
             margin: 0 auto;
 
@@ -77,10 +78,29 @@ html {
             margin: 2rem 2rem 2rem 3rem;
             color: $txt-light;
         }
+
+        
+
     }
 
 
+    div.footer-wrapper{
+        background-color: $nav-dark;
+        color: $txt-light;
+        height: 100%;
+        
+        
+        footer{
+            margin: 0 auto;
+            max-width: 64rem;
+            text-align: center;
+            
 
+            h6{
+                margin: .5rem;
+            }
+        }
+    }
 
 }
 
