@@ -4,44 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Unit 6 - Nonsense Story</title>
+    <title>Unit 7 - Pizza Emporium</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <div class="header-wrapper">
         <header>
-            <h3>Nonsense Story Generator</h3>
+            <h3>Herbie's Italian Slice</h3>
         </header>
     </div>
     <div class="main-wrapper">
         <main class="main">
-            <ol id="whatILearned"> What I have learned
-                <li>Read and understand MDN and Stack Overflow documentation</li>
-                <li>How to split a string and an array</li>
-                <li>Javascript Regular Expressions</li>
+            <ol>What I learned
+                <li>Create an Object Literal</li>
+                <li>Utilize Properties and Methods</li>
+                <li>Manipulate Object Properties</li>
+                <li>Manipulate Methods in an Object</li>
+                <li>Template Literal Strings</li>
+                <li></li>
             </ol>
-            <div class="form-wrapper">
-                <form action="#">
-                    <div class="noun">
-                            <label for="txtNoun">Four Nouns</label>
-                            <textarea name="txtNoun" id="txtNoun" cols="30" rows="4"></textarea>
-                        </div>
-                        <div class="adj">
-                            <label for="txtAdj">Four Adjectives</label>
-                            <textarea name="txtAdj" id="txtAdj" cols="30" rows="4"></textarea>
-                        </div>
-                        <div class="verbs">
-                            <label for="txtVerb">Three Verbs</label>
-                            <textarea name="txtVerb" id="txtVerb" cols="30" rows="3"></textarea>
-                        </div>
 
-                </form>
-                <button id="tellTheStory">Tell the Story</button>
+            <div class="buildPizza">
+                <fieldset id="crust">
+                    <legend>Crust:</legend>
+                    <label for="original">Original</label>
+                    <input type="radio" name="original" id="original">
+                    <label for="thin">Thin</label>
+                    <input type="radio" name="thin" id="thin">
+                    <label for="glutenFree">Gluten Free</label>
+                    <input type="radio" name="glutenFree" id="glutenFree">
+                </fieldset>
+                <fieldset id="cheese">
+                    <legend>Cheese:</legend>
+                    <label for="none">None</label>
+                    <input type="radio" name="none" id="none">
+                    <label for="regular">Regular</label>
+                    <input type="radio" name="regular" id="regular">
+                    <label for="extra">Extra</label>
+                    <input type="radio" name="extra" id="extra">
+                </fieldset>
+                <fieldset id="toppings">
+                    <legend>Toppings</legend>
+                    <label for="pepperoni">Pepperoni</label>
+                    <input type="radio" name="pepperoni" id="pepperoni">
+                    <label for="veggie">Veggie</label>
+                    <input type="radio" name="veggie" id="veggie">
+                    <label for="supreme">Supreme</label>
+                    <input type="radio" name="supreme" id="supreme">
+                </fieldset>
+
+                <label for="createPizza" id="buildPizza">Build My Pizza</label>
+                <button type="submit" name="createPizza" id="createPizza">Create My Pizza</button>
+                <label for="shoppingList" id="shoppingList">Shopping List</label>
+                <button type="submit" name="shoppingList" id="shoppingList">Create Shopping List</button>
+
             </div>
-            <div id="theStory">
-
-            </div>
-
+            
         </main>
     </div>
     <div class="footer-wrapper">
@@ -53,5 +71,3 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
-
-

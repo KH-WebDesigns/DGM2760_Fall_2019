@@ -22,6 +22,7 @@ html {
             padding: 1rem .5rem;
             max-width: 64rem;
             margin: 0 auto;
+            text-align: center;
 
         }
 
@@ -49,47 +50,50 @@ html {
             }
 
 
-        }
-    }
+            div.buildPizza{
+                height: 10px;
+                margin: 1rem $edge;
+                display: flex;
+                flex-direction: column;
+                -ms-flex-direction: column;
 
-    div.form-wrapper{
+                legend{
+                    font-size: $h6;
+                }
 
-        border: 1px white dotted;
-        margin: 0 1rem;
+                fieldset{
+                    margin: .5rem 0;
+                    font-size: $body2;
+                    
+                }
+                
+                label#buildPizza{
+                    margin-top: 1.25rem;
+                    font-size: $h6;
+                }
 
-        form{
-            display: flex;
-            justify-content: space-around;
-            
-            label{
-                display: block;
-                font-size: $sub1;
-                margin: .75rem 0;
+                button {
+                    font-size: $sub1;
+                    justify-self: flex-start;
+                    max-width: 25rem;
+                    margin: .5rem 0;
+
+                }
+
+                label#shoppingList{
+                    margin-top: 1.25rem;
+                    font-size: $h6;
+                }
+
+
 
             }
-            
-            input{
-                height: 8rem;
-                width: auto;
-                margin: .25rem  auto 2rem auto;
-            }
+
+
         }
-
-        button{
-            margin: 2rem 2rem 2rem 3rem;
-            color: $txt-light;
-        }
-
-        
-
     }
 
-    div#theStory{
-        max-width: 98%;
-        padding: 2%;
-        margin: 0 auto;
-    }
-
+    
 
     div.footer-wrapper{
         background-color: $nav-dark;

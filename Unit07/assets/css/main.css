@@ -162,6 +162,7 @@ html div.header-wrapper header {
   padding: 1rem 0.5rem;
   max-width: 64rem;
   margin: 0 auto;
+  text-align: center;
 }
 html div.main-wrapper {
   margin: 0 auto;
@@ -179,32 +180,33 @@ html div.main-wrapper main {
 html div.main-wrapper main ol {
   margin: 1.5rem auto 0.5rem auto;
 }
-html div.form-wrapper {
-  border: 1px white dotted;
-  margin: 0 1rem;
-}
-html div.form-wrapper form {
+html div.main-wrapper main div.buildPizza {
+  height: 10px;
+  margin: 1rem 2%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  -ms-flex-direction: column;
 }
-html div.form-wrapper form label {
-  display: block;
+html div.main-wrapper main div.buildPizza legend {
+  font-size: 2rem;
+}
+html div.main-wrapper main div.buildPizza fieldset {
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+}
+html div.main-wrapper main div.buildPizza label#buildPizza {
+  margin-top: 1.25rem;
+  font-size: 2rem;
+}
+html div.main-wrapper main div.buildPizza button {
   font-size: 1.6rem;
-  margin: 0.75rem 0;
+  justify-self: flex-start;
+  max-width: 25rem;
+  margin: 0.5rem 0;
 }
-html div.form-wrapper form input {
-  height: 8rem;
-  width: auto;
-  margin: 0.25rem auto 2rem auto;
-}
-html div.form-wrapper button {
-  margin: 2rem 2rem 2rem 3rem;
-  color: #FFFFFA;
-}
-html div#theStory {
-  max-width: 98%;
-  padding: 2%;
-  margin: 0 auto;
+html div.main-wrapper main div.buildPizza label#shoppingList {
+  margin-top: 1.25rem;
+  font-size: 2rem;
 }
 html div.footer-wrapper {
   background-color: #0D0D0D;
