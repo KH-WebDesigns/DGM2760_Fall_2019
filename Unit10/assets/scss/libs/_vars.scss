@@ -1,0 +1,70 @@
+//Gutters
+$edge: 2%;
+$dblEdge: (2 * $edge);
+
+//Colors: 
+$primaryBkg: #798BF2;
+$secondaryBkg: #274659;
+$nav-light: #FFFFFA;
+$nav-dark: #0D0D0D;
+$txt-light: #FFFFFA;
+$txt-dark: #0D0D0D;
+$link-light: #FAFAFF;
+$link-dark: #324016;
+
+//fontsizes: 
+$defaultFontSize: 62.5%; //this converts the default size to 10px for simpler increments
+
+$h1: 9.6rem;
+$h2: 6.0rem;
+$h3: 4.8rem;
+$h4: 3.4rem;
+$h5: 2.4rem;
+$h6: 2.0rem;
+$sub1: 1.6rem;
+$sub2: 1.4rem;
+$body1: 1.6rem;
+$body2: 1.4rem;
+
+
+h1{
+    font-size: $h1;
+
+}
+h2{
+    font-size: $h2;
+
+}
+h3{
+    font-size: $h3;
+}
+h4{
+    font-size: $h4;
+}
+h5{
+    font-size: $h5;
+}
+h6{
+    font-size: $h6;
+}
+sub{
+    .sub1{
+        font-size: $sub1;
+    }
+
+    .sub2{
+        font-size: $sub2;
+    }
+}
+
+p{
+    .body1{
+        font-size: $body1;
+    }
+
+    .body2{
+        font-size: $body2;
+    }
+}
+
+

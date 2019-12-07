@@ -1,0 +1,143 @@
+/*  apply a natural box layout model to all elements  */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+    margin: 0 auto;
+    background-color: slategray;
+
+
+    div.header-wrapper{
+        background-color:$nav-dark;
+        color: $txt-light;
+
+        header{
+            padding: 1rem .5rem;
+            max-width: 64rem;
+            margin: 0 auto;
+
+        }
+
+
+    }
+
+    div.main-wrapper{
+        margin: 0 auto;
+
+        main{
+            display: flex;
+            flex-direction: column;
+            -ms-flex-direction: row;
+
+            background-color: #6A303B;
+            color: $txt-light;
+            // max-height: 100vh;
+            min-height: 50rem;            
+            max-width: 64rem;
+            margin: 0 auto;
+
+
+            ol{
+                margin: 1.5rem auto .5rem auto;
+            }
+
+
+        }
+    }
+
+    div.form-wrapper{
+
+        border: 1px white dotted;
+        margin: 0 1rem;
+
+        form{
+            display: flex;
+            justify-content: space-around;
+            
+            label{
+                display: block;
+                font-size: $sub1;
+                margin: .75rem 0;
+
+            }
+            
+            input{
+                height: 8rem;
+                width: auto;
+                margin: .25rem  auto 2rem auto;
+            }
+        }
+
+        button{
+            margin: 2rem 2rem 2rem 3rem;
+            color: $txt-light;
+        }
+
+        
+
+    }
+
+    div#theStory{
+        max-width: 98%;
+        padding: 2%;
+        margin: 0 auto;
+    }
+
+
+    div.footer-wrapper{
+        background-color: $nav-dark;
+        color: $txt-light;
+        height: 100%;
+        
+        
+        footer{
+            margin: 0 auto;
+            max-width: 64rem;
+            text-align: center;
+            padding: .75rem 2rem;
+
+            h6{
+                margin: .5rem;
+            }
+        }
+    }
+
+    strong{
+        color: goldenrod;
+    }
+
+}
+
+//=======================COLUMN LAYOUT====================//
+
+.row {
+	clear: both;
+}
+
+
+@for $i from 1 through 12 { //i is the variable representing each row
+	$w: ($i / 12) * 100%; //width of columns
+	.small-#{$i} {
+		width: $w; float: left;
+	}
+}
+//======================= FOOTER LAYOUT ========================//
+
+
+
+
+
+
+//======================== CLEARFIX ========================//
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
