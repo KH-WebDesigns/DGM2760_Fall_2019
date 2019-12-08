@@ -4,21 +4,25 @@ duplicateMenu = () => {
 
     //create new list items for end of page
     let newList = document.createElement('ul')
+    document.querySelector('#smallNavArea').appendChild(newList);
+
+
     topList.forEach((menuItem) => {
         let newListItem = document.createElement('li')
         let newAnchor = document.createElement('a')
         newAnchor.setAttribute('href', menuItem.getAttribute('href'))
-
-        document.querySelector('#smallNavArea').appendChild(newList)
-        document.querySelector(newList).appendChild(newListItem)
-        document.querySelector(newListItem).appendChild(newAnchor)
         
-       
-    })
-    console.log(newAnchor)
+        newList.appendChild(newListItem)
+        newListItem.appendChild(newAnchor)
+        
+        newAnchor.textContent = menuItem.text;
 
-    // document.querySelector
+    })
+
+
+    
 }
 
 
-duplicateMenu();
+
+duplicateMenu()
