@@ -18,10 +18,13 @@ html {
         background-color:$nav-dark;
         color: $txt-light;
 
+
         header{
             padding: 1rem .5rem;
             max-width: 64rem;
             margin: 0 auto;
+            text-align: center;
+
 
         }
 
@@ -32,13 +35,8 @@ html {
         margin: 0 auto;
 
         main{
-            display: flex;
-            flex-direction: column;
-            -ms-flex-direction: row;
-
             background-color: #6A303B;
             color: $txt-light;
-            // max-height: 100vh;
             min-height: 50rem;            
             max-width: 64rem;
             margin: 0 auto;
@@ -46,9 +44,9 @@ html {
 
             ol{
                 margin: 1.5rem auto .5rem auto;
+                font-size: 1.5rem;
+            
             }
-
-
         }
     }
 
@@ -72,42 +70,26 @@ html {
                 height: 8rem;
                 width: auto;
                 margin: .25rem  auto 2rem auto;
+            
             }
         }
 
         button{
             margin: 2rem 2rem 2rem 3rem;
             color: $txt-light;
-        }
-
         
-
+        }
     }
 
     div#theStory{
         max-width: 98%;
         padding: 2%;
         margin: 0 auto;
+    
     }
 
 
-    div.footer-wrapper{
-        background-color: $nav-dark;
-        color: $txt-light;
-        height: 100%;
-        
-        
-        footer{
-            margin: 0 auto;
-            max-width: 64rem;
-            text-align: center;
-            padding: .75rem 2rem;
 
-            h6{
-                margin: .5rem;
-            }
-        }
-    }
 
     strong{
         color: goldenrod;
@@ -132,7 +114,23 @@ html {
 
 
 
+div.footer-wrapper{
+    background-color: $nav-dark;
+    color: $txt-light;
+    height: 100%;
+    
+    
+    footer{
+        margin: 0 auto;
+        max-width: 64rem;
+        text-align: center;
+        padding: .75rem 2rem;
 
+        h6{
+            margin: .5rem;
+        }
+    }
+}
 
 
 //======================== CLEARFIX ========================//

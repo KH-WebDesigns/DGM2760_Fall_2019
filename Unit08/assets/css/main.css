@@ -162,14 +162,12 @@ html div.header-wrapper header {
   padding: 1rem 0.5rem;
   max-width: 64rem;
   margin: 0 auto;
+  text-align: center;
 }
 html div.main-wrapper {
   margin: 0 auto;
 }
 html div.main-wrapper main {
-  display: flex;
-  flex-direction: column;
-  -ms-flex-direction: row;
   background-color: #6A303B;
   color: #FFFFFA;
   min-height: 50rem;
@@ -178,6 +176,7 @@ html div.main-wrapper main {
 }
 html div.main-wrapper main ol {
   margin: 1.5rem auto 0.5rem auto;
+  font-size: 1.5rem;
 }
 html div.form-wrapper {
   border: 1px white dotted;
@@ -205,20 +204,6 @@ html div#theStory {
   max-width: 98%;
   padding: 2%;
   margin: 0 auto;
-}
-html div.footer-wrapper {
-  background-color: #0D0D0D;
-  color: #FFFFFA;
-  height: 100%;
-}
-html div.footer-wrapper footer {
-  margin: 0 auto;
-  max-width: 64rem;
-  text-align: center;
-  padding: 0.75rem 2rem;
-}
-html div.footer-wrapper footer h6 {
-  margin: 0.5rem;
 }
 html strong {
   color: goldenrod;
@@ -286,6 +271,21 @@ html strong {
 .small-12 {
   width: 100%;
   float: left;
+}
+
+div.footer-wrapper {
+  background-color: #0D0D0D;
+  color: #FFFFFA;
+  height: 100%;
+}
+div.footer-wrapper footer {
+  margin: 0 auto;
+  max-width: 64rem;
+  text-align: center;
+  padding: 0.75rem 2rem;
+}
+div.footer-wrapper footer h6 {
+  margin: 0.5rem;
 }
 
 .clearfix::after {
