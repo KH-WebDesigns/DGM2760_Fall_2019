@@ -4,46 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Unit 6 - Nonsense Story</title>
+    <title>Unit 11 - Hotel Booking</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <div class="header-wrapper">
         <header>
-            <h3>Nonsense Story Generator</h3>
+            <h3>Puttin' on The Ritz</h3>
         </header>
     </div>
     <div class="main-wrapper">
         <main class="main">
-            <ol id="whatILearned"> What I have learned
-                <li>Read and understand MDN and Stack Overflow documentation</li>
-                <li>How to split a string and an array</li>
-                <li>Javascript Regular Expressions</li>
+            <h5>What I have learned</h5>
+            <ol id="whatILearned"> 
+                <li>Create asynchronous connection to a JSON file</li>
+                <li>How to use the 'then' method to retrieve a Promise</li>
+                <li>Using try...catch</li>
             </ol>
-            <div class="form-wrapper">
-                <form action="#">
-                    <div class="noun">
-                            <label for="txtNoun">Four Nouns</label>
-                            <textarea name="txtNoun" id="txtNoun" cols="30" rows="4"></textarea>
-                        </div>
-                        <div class="adj">
-                            <label for="txtAdj">Four Adjectives</label>
-                            <textarea name="txtAdj" id="txtAdj" cols="30" rows="4"></textarea>
-                        </div>
-                        <div class="verbs">
-                            <label for="txtVerb">Three Verbs</label>
-                            <textarea name="txtVerb" id="txtVerb" cols="30" rows="3"></textarea>
-                        </div>
-
-                </form>
-                <button id="tellTheStory">Tell the Story</button>
+            <div class="chooseHotel">
+                <h4>Choose Your Hotel</h4>
+                <ul>
+                    <li><a href="#" id="ritz"></a>Ritz</li>
+                    <li><a href="#" id="grandAmerica">The Grand America</a></li>
+                    <li><a href="#" id="trumpTower">Trump International Hotel & Tower</a></li>
+                </ul>
             </div>
-            <div id="theStory">
+            <div class="hotelInfo">
+                <h4>Hotel</h4>
+                <ul>
+                    <h6>Where: </h6>
+                    
 
+
+                </ul> 
             </div>
-
+            
         </main>
-    </div>
     <div class="footer-wrapper">
         <footer>
             <h6>&copy;2019 &bull; KHWebDesigns &bull; DGM 2760</h6>
