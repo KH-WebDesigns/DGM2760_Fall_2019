@@ -51,7 +51,6 @@ html {
 
 
             div.buildPizza{
-                height: 10px;
                 margin: 1rem $edge;
                 display: flex;
                 flex-direction: column;
@@ -90,6 +89,18 @@ html {
             }
 
 
+            //message back to the user
+            div#userMessage{
+                font-size: $h6;
+                margin: 1rem $edge;
+
+                p{
+                    font-size: 1.2rem;
+                    margin-top: .25rem;
+                }
+
+            }
+
         }
     }
 
@@ -109,6 +120,8 @@ html {
 
             h6{
                 margin: .5rem;
+                
+               
             }
         }
     }

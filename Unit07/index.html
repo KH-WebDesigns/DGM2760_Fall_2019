@@ -27,30 +27,30 @@
             <div class="buildPizza">
                 <fieldset id="crust">
                     <legend>Crust:</legend>
+                    <input type="radio" name="crust" id="original">
                     <label for="original">Original</label>
-                    <input type="radio" name="original" id="original">
+                    <input type="radio" name="crust" id="thin">
                     <label for="thin">Thin</label>
-                    <input type="radio" name="thin" id="thin">
+                    <input type="radio" name="crust" id="glutenFree">
                     <label for="glutenFree">Gluten Free</label>
-                    <input type="radio" name="glutenFree" id="glutenFree">
                 </fieldset>
                 <fieldset id="cheese">
                     <legend>Cheese:</legend>
-                    <label for="none">None</label>
-                    <input type="radio" name="none" id="none">
+                    <input type="radio" name="cheese" id="none">
+                    <label for="none">No Cheese</label>
+                    <input type="radio" name="cheese" id="regular">
                     <label for="regular">Regular</label>
-                    <input type="radio" name="regular" id="regular">
+                    <input type="radio" name="cheese" id="extra">
                     <label for="extra">Extra</label>
-                    <input type="radio" name="extra" id="extra">
                 </fieldset>
                 <fieldset id="toppings">
                     <legend>Toppings</legend>
+                    <input type="radio" name="toppings" id="pepperoni">
                     <label for="pepperoni">Pepperoni</label>
-                    <input type="radio" name="pepperoni" id="pepperoni">
+                    <input type="radio" name="toppings" id="veggie">
                     <label for="veggie">Veggie</label>
-                    <input type="radio" name="veggie" id="veggie">
+                    <input type="radio" name="toppings" id="supreme">
                     <label for="supreme">Supreme</label>
-                    <input type="radio" name="supreme" id="supreme">
                 </fieldset>
 
                 <label for="createPizza" id="buildPizza">Build My Pizza</label>
@@ -58,7 +58,13 @@
                 <label for="shoppingList" id="shoppingList">Shopping List</label>
                 <button type="submit" name="shoppingList" id="shoppingList">Create Shopping List</button>
 
+           
+                <div id="userMessage">
+                        <h6>Message for You!</h6>
+                        <p id="message"></p>
+                </div>   
             </div>
+         
             
         </main>
     </div>

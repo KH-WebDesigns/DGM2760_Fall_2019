@@ -181,7 +181,6 @@ html div.main-wrapper main ol {
   margin: 1.5rem auto 0.5rem auto;
 }
 html div.main-wrapper main div.buildPizza {
-  height: 10px;
   margin: 1rem 2%;
   display: flex;
   flex-direction: column;
@@ -207,6 +206,14 @@ html div.main-wrapper main div.buildPizza button {
 html div.main-wrapper main div.buildPizza label#shoppingList {
   margin-top: 1.25rem;
   font-size: 2rem;
+}
+html div.main-wrapper main div#userMessage {
+  font-size: 2rem;
+  margin: 1rem 2%;
+}
+html div.main-wrapper main div#userMessage p {
+  font-size: 1.2rem;
+  margin-top: 0.25rem;
 }
 html div.footer-wrapper {
   background-color: #0D0D0D;
