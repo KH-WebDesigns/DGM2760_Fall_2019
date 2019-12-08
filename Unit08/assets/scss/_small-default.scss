@@ -47,53 +47,27 @@ html {
                 font-size: 1.5rem;
             
             }
-        }
-    }
 
-    div.form-wrapper{
 
-        border: 1px white dotted;
-        margin: 0 1rem;
-
-        form{
-            display: flex;
-            justify-content: space-around;
             
-            label{
-                display: block;
-                font-size: $sub1;
-                margin: .75rem 0;
-
-            }
-            
-            input{
-                height: 8rem;
-                width: auto;
-                margin: .25rem  auto 2rem auto;
-            
-            }
-        }
-
-        button{
-            margin: 2rem 2rem 2rem 3rem;
-            color: $txt-light;
         
         }
     }
 
-    div#theStory{
-        max-width: 98%;
-        padding: 2%;
-        margin: 0 auto;
-    
-    }
+
+}
 
 
+div.question-wrapper{
+    margin: 2rem $edge;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
 
-
-    strong{
-        color: goldenrod;
-    }
+    fieldset{
+        padding: .5rem 0;
+        font-size: 1.15rem;
+ }
 
 }
 

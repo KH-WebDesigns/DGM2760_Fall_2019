@@ -178,35 +178,16 @@ html div.main-wrapper main ol {
   margin: 1.5rem auto 0.5rem auto;
   font-size: 1.5rem;
 }
-html div.form-wrapper {
-  border: 1px white dotted;
-  margin: 0 1rem;
-}
-html div.form-wrapper form {
+
+div.question-wrapper {
+  margin: 2rem 2%;
+  justify-content: flex-start;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
 }
-html div.form-wrapper form label {
-  display: block;
-  font-size: 1.6rem;
-  margin: 0.75rem 0;
-}
-html div.form-wrapper form input {
-  height: 8rem;
-  width: auto;
-  margin: 0.25rem auto 2rem auto;
-}
-html div.form-wrapper button {
-  margin: 2rem 2rem 2rem 3rem;
-  color: #FFFFFA;
-}
-html div#theStory {
-  max-width: 98%;
-  padding: 2%;
-  margin: 0 auto;
-}
-html strong {
-  color: goldenrod;
+div.question-wrapper fieldset {
+  padding: 0.5rem 0;
+  font-size: 1.15rem;
 }
 
 .row {

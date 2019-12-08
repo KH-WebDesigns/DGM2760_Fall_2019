@@ -3,7 +3,8 @@ const question = {
     answer1: 'Rambler',
     answer2: 'Split-Level',
     answer3: 'Tudor',
-    correct: 2,
+    answer4: 'Mansion',
+    correct: 1,
     display: () => {
         document.querySelector('#questionStem').textContent = question.stem;
         //Displys the question options here
@@ -18,8 +19,13 @@ const question = {
 
 }
 document.querySelector('#answer1Label').textContent = question.answer1;
+document.querySelector('#answer2Label').textContent = question.answer2;
+document.querySelector('#answer3Label').textContent = question.answer3;
+document.querySelector('#answer4Label').textContent = question.answer4;
 
 document.querySelector('#answer1').addEventListener('click', () => question.check(1))
 document.querySelector('#answer2').addEventListener('click', () => question.check(2))
+document.querySelector('#answer3').addEventListener('click', () => question.check(3))
+document.querySelector('#answer4').addEventListener('click', () => question.check(4))
 
 console.log(question.stem);
