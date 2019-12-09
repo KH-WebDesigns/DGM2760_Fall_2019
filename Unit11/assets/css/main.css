@@ -223,6 +223,9 @@ html div.footer-wrapper footer h6 {
 html strong {
   color: goldenrod;
 }
+html img {
+  float: right;
+}
 
 .row {
   clear: both;

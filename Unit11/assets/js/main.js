@@ -1,28 +1,21 @@
-async function getHotelData() {
+async function getHotelData(){
     try {
         const response = await fetch('./assets/hotel.json')
-        return await response.json() //returns the JSON ojbect hotel.json[hotel]
-
+        return await response.json() //Returns the json object itself
     } catch (error) {
-        // console.error(error);
+        console.error(error)
     }
 }
 
 let hotelData = {}
 getHotelData().then(data => hotelData = data)
 
-//attach to click handlers on the anchor tags
-// document.querySelectorAll('a')
-let hotelList = document.querySelectorAll('a')
+let hotelList = document.querySelectorAll('a');
 hotelList.forEach(hotel => {
     
-    let hotelAnchor = hotel.addEventListener('click', hotelInfo)
+    hotel.addEventListener('click', hotelInfo)
     
 });
-
-
-
-
 
 
 function hotelInfo(event) {
@@ -31,4 +24,8 @@ function hotelInfo(event) {
     })
 
     console.log(hotelChoice)
+document.querySelector('#hotelName').textContent = `${hotelChoice.name} Hotel`
+document.querySelector('#rooms').textContent = `${hotelChoice.rooms}`
+document.querySelector('#pool').textContent = `${hotelChoice.pool}`
+document.querySelector('#picture').src = `./assets/images/${hotelChoice.picture}`
 }
