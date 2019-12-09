@@ -25,7 +25,9 @@ function hotelInfo(event) {
 
     console.log(hotelChoice)
 document.querySelector('#hotelName').textContent = `${hotelChoice.name} Hotel`
+document.querySelector('#address').textContent = `${hotelChoice.address}`
 document.querySelector('#rooms').textContent = `${hotelChoice.rooms}`
 document.querySelector('#pool').textContent = `${hotelChoice.pool}`
+document.querySelector('#roomType').textContent = `${hotelChoice.roomTypes}`
 document.querySelector('#picture').src = `./assets/images/${hotelChoice.picture}`
 }
