@@ -1,0 +1,36 @@
+"hotels": [
+    {
+        "name": "Ritz",
+        "rooms": "325",
+        "pool": "Yes",
+        "roomTypes": [
+            "Grand Suite", "Family", "Couple", "Single"
+        ],
+        "address": "100 Carondelet Plaza, St Louis, MO 63105",
+        "picture": "ritz.jpg"
+
+    },
+
+    {
+        "name": "Grand America",
+        "rooms": "1005",
+        "pool": "No",
+        "roomTypes": [
+            "Grand America", "Suite", "King", "Queen"
+        ],
+        "address": "555 Main St, Salt Lake City, Utah 84111",
+        "picture": "GrandAmerica.jpg"
+    }, 
+
+    {
+        "name": "Trump Tower",
+        "rooms": "105",
+        "pool": "Yes",
+        "roomTypes": [
+            "Presidential Suite", "Grand Room", "King", "Double"
+        ],
+        "address": "725 5th Ave, New York, NY 10022",
+        "picture": "trumpTower.jpg"
+    }
+
+]

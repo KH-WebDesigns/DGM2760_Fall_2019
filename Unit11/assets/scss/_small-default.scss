@@ -48,47 +48,47 @@ html {
                 margin: 1.5rem auto .5rem auto;
             }
 
+            div.chooseHotel{
+                margin: 0 $dblEdge;
 
-        }
-    }
+                ul{
+                    list-style: none;
 
-    div.form-wrapper{
+                    li{
+                        background-color: $secondaryBkg;
+                        padding: 1rem 1.5rem;
+                        margin: .5rem $dblEdge;
+                        width: 25rem;
+                        border-radius: 25px;
+                    }
+                }
 
-        border: 1px white dotted;
-        margin: 0 1rem;
 
-        form{
-            display: flex;
-            justify-content: space-around;
-            
-            label{
-                display: block;
-                font-size: $sub1;
-                margin: .75rem 0;
+                a{
+                    text-decoration: none;
+                    color: #FFFFFA;
+                }
+            }
+
+            div.hotelInfo{
+                margin: 1.75rem $dblEdge;
+
+                p{
+                    background-color: $secondaryBkg;
+                    width: 15rem;
+                    margin-top: 1rem;
+                    padding: 1rem 1.5rem 1rem 1rem;
+                    border-radius: 25px;
+
+                }
 
             }
-            
-            input{
-                height: 8rem;
-                width: auto;
-                margin: .25rem  auto 2rem auto;
-            }
+
+
         }
-
-        button{
-            margin: 2rem 2rem 2rem 3rem;
-            color: $txt-light;
-        }
-
-        
-
     }
 
-    div#theStory{
-        max-width: 98%;
-        padding: 2%;
-        margin: 0 auto;
-    }
+    
 
 
     div.footer-wrapper{
