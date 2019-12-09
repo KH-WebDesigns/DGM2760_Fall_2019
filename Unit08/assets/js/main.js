@@ -18,6 +18,7 @@ const question = {
     }
 
 }
+document.querySelector('#questionStem').textContent = question.stem;
 document.querySelector('#answer1Label').textContent = question.answer1;
 document.querySelector('#answer2Label').textContent = question.answer2;
 document.querySelector('#answer3Label').textContent = question.answer3;
