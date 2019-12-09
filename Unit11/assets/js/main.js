@@ -4,7 +4,7 @@ async function getHotelData() {
         return await response.json() //returns the JSON ojbect hotel.json[hotel]
 
     } catch (error) {
-        console.error(error)
+        // console.error(error);
     }
 }
 
